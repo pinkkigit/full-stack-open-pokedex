@@ -1,0 +1,13 @@
+name: Scheduled healthcheck
+
+on:
+  push:
+
+steps:
+  - name: Check the deployed service URL
+    uses: jtalk/url-health-check-action@v1.5
+    with:
+      # Check the following URLs one by one sequentially
+      url: https://pinkki-pokedex.herokuapp.com
+      # Follow redirects, or just report success on 3xx status codes
+      follow-redirect: no # Optional, defaults to "no" 1
