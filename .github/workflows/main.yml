@@ -15,3 +15,5 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "pinkki-pokedex" #Must be unique in Heroku
           heroku_email: "joonayv@gmail.com"
+          healthcheck: "https://pinkki-pokedex.herokuapp.com/health"
+          checkstring: "ok"
