@@ -17,3 +17,4 @@ jobs:
           heroku_email: "joonayv@gmail.com"
           healthcheck: "https://pinkki-pokedex.herokuapp.com/health"
           checkstring: "ok"
+          rollbackonhealthcheckfailed: true
