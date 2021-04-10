@@ -1,1 +1,1 @@
-web: npm run haha
+web: npm run start-prod
